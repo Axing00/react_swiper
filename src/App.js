@@ -1,25 +1,25 @@
 /*eslint-disable*/
 
-import './App.css';
+import "./App.css";
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/scss";
+import "swiper/scss/pagination";
+import "swiper/scss/navigation";
 
 // import required modules
-import { Pagination, Navigation } from 'swiper';
+import { Pagination, Navigation } from "swiper";
 
 function App() {
   return (
     <div className="App">
       <Swiper
         pagination={{
-          type: 'fraction',
+          type: "fraction",
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
