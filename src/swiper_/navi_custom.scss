@@ -1,21 +1,29 @@
 @import "../assets/mixins";
 
-.slide_btn_area {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 10px;
+
+.slide_btns {
+
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.5s;
 	z-index: 50;
+	cursor: pointer;
 
-	@include posi(50%, 50%);
-
-	div {
-		transition: all 0.5s;
-		cursor: pointer;
-
-		&:hover {
-			background-color: rgb(60, 57, 53);
-			color: blue;
-		}
+	&:hover {
+		background-color: rgb(60, 57, 53);
+		color: blue;
 	}
+
+
+}
+
+.slide_prev {
+	@extend .slide_btns;
+	left: 0;
+}
+
+.slide_next {
+	@extend .slide_btns;
+	right: 0;
 }

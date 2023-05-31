@@ -7,13 +7,13 @@ import "./navi_custom.scss";
 export default function SlidePrevButton() {
   const swiper = useSwiper();
   return (
-    <div className="slide_btn_area">
-      <div className="slide_prev" onClick={() => swiper.slidePrev()}>
+    <>
+      <div className="slide_btns slide_prev" onClick={() => swiper.slidePrev()}>
         prev slide
       </div>
-      <div className="slide_next" onClick={() => swiper.slideNext()}>
+      <div className="slide_btns slide_next" onClick={() => swiper.slideNext()}>
         next slide
       </div>
-    </div>
+    </>
   );
 }
