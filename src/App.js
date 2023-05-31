@@ -1,11 +1,11 @@
 /*eslint-disable*/
 import "./style.scss";
-import Swiper_basic from "./swiper_/swiper_basic";
+import SwiperBasic from "./swiper_/SwiperBasic";
 
 function App() {
   return (
     <div className="App">
-      <Swiper_basic />
+      <SwiperBasic />
     </div>
   );
 }

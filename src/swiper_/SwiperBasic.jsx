@@ -4,15 +4,24 @@ import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+// Import Defalut Swiper styles
 import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
+// Import Custom Swiper styles
+import "./CustomNavi.scss";
+
+// Import Swiper styles
+import "./SwiperBasic.scss";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
-function Swiper_basic() {
+// Import SlideNextButton component
+import SlideNextButton from "./SlideNextButton.js";
+import SlidePrevButton from "./SlidePrevButton.js";
+
+function SwiperBasic() {
   return (
     <div>
       <Swiper
@@ -23,17 +32,21 @@ function Swiper_basic() {
         modules={[Pagination, Navigation]}
         className="first_Swiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>
+          {({ isActive }) => (
+            <div>Current slide is {isActive ? "액션!" : "액션없음!"}</div>
+          )}
+        </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <div>
+          <SlidePrevButton />
+          <SlideNextButton />
+        </div>
       </Swiper>
     </div>
   );
 }
-export default Swiper_basic;
+export default SwiperBasic;

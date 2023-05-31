@@ -1,0 +1,19 @@
+%sw-slide {
+	display: flex;
+	height: 500px;
+	background-color: #ccc;
+	align-items: center;
+	justify-content: center;
+}
+
+.first_Swiper .swiper-slide {
+	@extend %sw-slide;
+}
+
+.second_Swiper .swiper-slide {
+	@extend %sw-slide;
+}
+
+.swiper-pagination {
+	position: relative;
+}
