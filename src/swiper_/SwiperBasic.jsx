@@ -42,8 +42,8 @@ function SwiperBasic() {
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
+        <SlideBtns />
       </Swiper>
-      <SlideBtns />
     </div>
   );
 }
