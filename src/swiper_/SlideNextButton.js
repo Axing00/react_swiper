@@ -1,6 +1,9 @@
 import { React } from "react";
 import { useSwiper } from "swiper/react";
 
+// Import Custom Swiper styles
+import "./navi_custom.scss";
+
 export default function SlideNextButton() {
   const swiper = useSwiper();
   // Style Css
@@ -10,7 +13,7 @@ export default function SlideNextButton() {
 
   return (
     <div
-      className="swiper-button-next"
+      className="slide_next"
       style={cusPoint}
       onClick={() => swiper.slideNext()}
     >
