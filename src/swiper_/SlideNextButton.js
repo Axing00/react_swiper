@@ -2,7 +2,7 @@ import { React } from "react";
 import { useSwiper } from "swiper/react";
 
 // Import Custom Swiper styles
-import "./navi_custom.scss";
+import "./SlideBtns.scss";
 
 export default function SlideNextButton() {
   const swiper = useSwiper();

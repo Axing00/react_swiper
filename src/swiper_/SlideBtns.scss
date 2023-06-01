@@ -8,10 +8,11 @@
 	transform: translateY(-50%);
 	transition: all 0.5s;
 	z-index: 50;
+	color: #fff;
 	cursor: pointer;
 
 	&:hover {
-		background-color: rgb(60, 57, 53);
+		background-color: #fff;
 		color: blue;
 	}
 }
