@@ -29,5 +29,8 @@
 }
 
 .swiper-pagination {
-	position: relative;
+	position: absolute;
+	top: unset;
+	bottom: 0;
+	color: #fff;
 }

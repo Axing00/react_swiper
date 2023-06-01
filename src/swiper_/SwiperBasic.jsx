@@ -26,6 +26,7 @@ import { Pagination, EffectFade } from "swiper";
 
 // Import SlideBtns component
 import SlideBtns from "./SlideBtns.js";
+/* ++++++++++++++++++++ Swiper.JS ++++++++++++++++++++ */
 
 function SwiperBasic() {
   let [images, setImages] = useState([
@@ -34,7 +35,7 @@ function SwiperBasic() {
     SlideImg02,
     SlideImg03,
   ]);
-  let altTexts = ["이미지 0", "이미지 1", "이미지 2", "이미지 3"];
+  let altTexts = ["이미지0", "이미지1", "이미지2", "이미지3"];
 
   return (
     <div>
@@ -48,7 +49,7 @@ function SwiperBasic() {
       >
         {images.map((images, index) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               <Link to="#">
                 <img src={images} alt={altTexts[index]} />
               </Link>
